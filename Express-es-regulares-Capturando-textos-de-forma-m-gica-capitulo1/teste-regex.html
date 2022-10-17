@@ -1,0 +1,15 @@
+<html>
+    <script>
+        var alvo = '11a22b33c';
+        var exp = /(\d\d)(\w)/g; //2 dígitos e 1 word char, dois grupos
+        var resultado = exp.exec(alvo);
+            console.log(resultado); 
+            console.log(resultado[0]); //devolve o match inteiro: 22b
+            console.log(resultado[1]); //devolve o primeiro grupo: 22
+            console.log(resultado[1]); //devolve o primeiro grupo: b
+            console.log(resultado.index); //devolve a posição onde o match começo no alvo: 3
+            console.log(exp.lastIndex); //devolve a última posição do match: 6
+	
+
+    </script>
+</html>
